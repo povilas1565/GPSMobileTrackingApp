@@ -91,4 +91,4 @@ app.get('/getlocation', jsonParser, function (req, res) {
     dbFunctions.getLocation(userEmail,res);
 });
 app.use('/', (req, res) => res.send("Welcome GPS Mobile Tracker App User !"));
-app.listen(process.env.PORT, () => console.log('Elish Enterprise Server is ready on localhost:' + process.env.PORT));
+app.listen(process.env.PORT, () => console.log('GPS Server is ready on localhost:' + process.env.PORT));

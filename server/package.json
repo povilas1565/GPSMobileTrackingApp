@@ -1,13 +1,13 @@
 {
   "name": "server",
   "version": "1.1.0",
-  "description": "GPS-Mobile-Tracking-App",
+  "description": "GPSMobileTrackingApp",
   "main": "app.js",
   "scripts": {
     "test": "test",
     "start": "nodemon index"
   },
-  "author": "Amit Shukla",
+  "author": "povilas1565",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "3.0.7",

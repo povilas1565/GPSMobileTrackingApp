@@ -52,13 +52,13 @@ module.exports = {
             resultsNotFound["errorMessage"] = "Something went wrong with Server.";
             return res.send(resultsNotFound);
           }
-          if (results =="") {
+          if (results ==="") {
             resultsNotFound["errorMessage"] = "User Id not found.";
             return res.send(resultsNotFound);
           }
           password(req.body.inputPassword).verifyAgainst(results[0].password, function (error, verified) {
           //bcrypt.compare(req.body.inputPassword, results[0].password, function (err, result) {
-      if (result == true) {
+      if (result === true) {
         var token = {
           "token": jwt.sign(
             { email: req.body.inputEmail },
@@ -92,7 +92,7 @@ module.exports = {
             resultsNotFound["errorMessage"] = "Something went wrong with Server.";
             return res.send(resultsNotFound);
           }
-          if (results =="") {
+          if (results ==="") {
             resultsNotFound["errorMessage"] = "User Id not found.";
             return res.send(resultsNotFound);
           }
@@ -158,7 +158,7 @@ module.exports = {
             resultsNotFound["errorMessage"] = "Something went wrong with Server.";
             return res.send(resultsNotFound);
           }
-          if (results =="") {
+          if (results ==="") {
             resultsNotFound["errorMessage"] = "User Id not found.";
             return res.send(resultsNotFound);
           }
