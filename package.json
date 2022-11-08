@@ -1,14 +1,14 @@
 {
-"name": "gpsmobiletrackingapp",
-"version": "1.1.0",
+  "name": "gpsmobiletrackingapp",
+  "version": "1.1.0",
   "engines": {
     "node": "14.18.3"
   },
-"main": "",
-"scripts": {
-"start": "npm start --prefix server",
-"install-client": "cd Client && npm install && ng run build && cd ..",
-"install-server": "cd server && npm install && cd .. ",
-"heroku-postbuild": "npm run install-client && npm run install-server"
-}
+  "main": "main.js",
+  "scripts": {
+    "start": "npm start --prefix server",
+    "install-client": "cd Client && npm install && npm run build && cd ..",
+    "install-server": "cd server && npm install && cd .. ",
+    "heroku-postbuild": "npm run install-client && npm run install-server"
+  }
 }
